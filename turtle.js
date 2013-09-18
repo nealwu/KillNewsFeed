@@ -7,14 +7,14 @@ function blockAndDisplay() {
     } else if (message.length == 0) {
         feed.hide();
         message = $('<h1>')
-        .attr({ id: 'distracted' })
-        .html("Don't get distracted by Facebook!")
-        .css({
-          'font-size': '32px',
-          'font-family': "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif",
-          position: 'relative',
-          top: '100px'
-        })
+          .attr({ id: 'distracted' })
+          .html("Don't get distracted by Facebook!")
+          .css({
+            'font-size': '32px',
+            'font-family': "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif",
+            position: 'relative',
+            top: '100px'
+          });
         $('[data-location=maincolumn]').append(message);
     }
 }
