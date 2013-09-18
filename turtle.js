@@ -9,7 +9,7 @@ function blockAndDisplay() {
         message = $('<h1>')
             .attr('id', 'distracted')
             .text("Don't get distracted by Facebook!")
-            .css('font-size', '32px')
+            .css('font-size', '30px')
             .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
             .css('position', 'relative')
             .css('top', '100px');
