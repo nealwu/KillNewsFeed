@@ -5,7 +5,7 @@ function getFeed() {
 }
 
 function blockAndDisplay() {
-    $('#distraction_message').remove();
+    $('#distracted').remove();
     var feed = getFeed();
 
     if (feed.length > 0) {
@@ -13,7 +13,7 @@ function blockAndDisplay() {
 
         var container = $('#globalContainer');
         var message = $('<h1>');
-        message.attr('id', 'distraction_message');
+        message.attr('id', 'distracted');
         message.html("Don't get distracted by Facebook!");
         message.css('font-size', '36px');
         message.css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif");
