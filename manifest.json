@@ -11,7 +11,7 @@
   }],
   "browser_action": {
     "name": "Kill Facebook's News Feed",
-    "icons": ["icon.png"]
+    "icons": []
   },
   "manifest_version": 2
 }
