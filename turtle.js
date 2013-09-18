@@ -1,48 +1,46 @@
 // Copyright (c) 2012 Neal Wu. All rights reserved.
 
-var counter = 0;
-/*
-chrome.browserAction.onClicked.addListener(function(tab) {
-    counter = 0;
-});
-*/
-if (document.URL.indexOf("facebook.com") !== -1) {
-    function block() {
-        $('document').ready(function() {
+function getFeed() {
+    return $('[id^=topnews_main_stream]');
+}
+
+function blockAndDisplay() {
+    $(document).ready(function() {
+        var feed = getFeed();
+
+        if (feed.length > 0) {
+            feed.hide();
+
+            var container = $('#globalContainer');
             var message = $('<h1>');
+            message.attr('id', 'distraction_message');
+            message.html("Don't get distracted by Facebook!");
+            message.css('font-size', '36px');
+            message.css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif");
+            message.css('position', 'absolute');
+            message.css('left', '20px');
+            message.css('top', '250px');
+            container.append(message);
+        }
+    });
+}
 
-            $('body').fadeOut(250, function() {
-                $('html').append(message);
+function hideMessage() {
+    $('#distraction_message').remove();
+}
 
-                message.html("Don't get addicted to Facebook!");
-                message.css('font-size', '60px');
-                message.css('position', 'absolute');
-
-                var left = window.innerWidth / 2 - message.width() / 2;
-                var top = window.innerHeight / 2 - message.height() / 2 - 50;
-
-                message.css('left', left + 'px');
-                message.css('top', top + 'px');
-            });
-
-            window.setTimeout(function() {
-                message.hide();
-                $('body').fadeIn(250);
-            }, 1250);
-        });
-    }
-
-    block();
+if (document.URL.indexOf("facebook.com") !== -1) {
+    getFeed().hide();
+    blockAndDisplay();
     var classes = $('body').attr('class');
 
-    window.setInterval(function() {
+    setInterval(function() {
         var newClasses = $('body').attr('class');
 
         if (classes != newClasses) {
             classes = newClasses;
-            counter++;
-            chrome.browserAction.setBadgeText({text:String(counter)});
-            block();
+            hideMessage();
+            blockAndDisplay();
         }
-    }, 250);
+    }, 200);
 }
