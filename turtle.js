@@ -1,17 +1,10 @@
-// Copyright (c) 2012 Neal Wu. All rights reserved.
-
-function getFeed() {
-    return $('[id^=topnews_main_stream]');
-}
-
 function blockAndDisplay() {
     $('#distracted').remove();
-    var feed = getFeed();
+    var feed = $('[id^=topnews_main_stream]');
 
     if (feed.length > 0) {
         feed.hide();
 
-        var container = $('#globalContainer');
         var message = $('<h1>');
         message.attr('id', 'distracted');
         message.html("Don't get distracted by Facebook!");
@@ -20,11 +13,11 @@ function blockAndDisplay() {
         message.css('position', 'absolute');
         message.css('left', '20px');
         message.css('top', '250px');
-        container.append(message);
+        $('#globalContainer').append(message);
     }
 }
 
 if (document.URL.indexOf("facebook.com") !== -1) {
     blockAndDisplay();
-    setInterval(blockAndDisplay, 250);
+    setInterval(blockAndDisplay, 200);
 }
