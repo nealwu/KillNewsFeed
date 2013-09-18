@@ -8,12 +8,11 @@ function blockAndDisplay() {
         feed.hide();
         message = $('<h1>');
         message.attr('id', 'distracted');
-        message.html("Don't get distracted by FB!");
-        message.css('font-size', '36px');
+        message.html("Don't get distracted by Facebook!");
+        message.css('font-size', '32px');
         message.css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif");
         message.css('position', 'relative');
         message.css('top', '100px');
-        message.css('float', 'left');
         $('[data-location=maincolumn]').append(message);
     }
 }
