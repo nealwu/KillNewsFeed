@@ -1,5 +1,5 @@
 function blockAndDisplay() {
-    var feed = $('[id^=topnews_main_stream]');
+    var feed = $('[id^=topnews_main_stream], [id^=pagelet_home_stream]');
     var message = $('#distracted');
 
     if (feed.length == 0) {
