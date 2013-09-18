@@ -1,0 +1,17 @@
+{
+  "name": "Facebook Turtle",
+  "version": "1.0",
+  "permissions": [
+    "http://*/*"
+  ],
+  "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.min.js", "turtle.js"],
+      "run_at": "document_idle"
+  }],
+  "browser_action": {
+    "name": "Make Facebook slow like a turtle",
+    "icons": ["icon.png"]
+  },
+  "manifest_version": 2
+}
