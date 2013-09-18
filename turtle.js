@@ -25,5 +25,6 @@ function blockAndDisplay() {
 }
 
 if (document.URL.indexOf("facebook.com") !== -1) {
+    blockAndDisplay();
     setInterval(blockAndDisplay, 250);
 }

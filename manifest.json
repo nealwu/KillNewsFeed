@@ -7,10 +7,10 @@
   "content_scripts": [{
       "matches": ["http://*/*", "https://*/*"],
       "js": ["jquery.min.js", "turtle.js"],
-      "run_at": "document_idle"
+      "run_at": "document_end"
   }],
   "browser_action": {
-    "name": "Make Facebook slow like a turtle",
+    "name": "Kill Facebook's News Feed",
     "icons": ["icon.png"]
   },
   "manifest_version": 2
