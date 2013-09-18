@@ -1,11 +1,12 @@
 function blockAndDisplay() {
-    $('#distracted').remove();
     var feed = $('[id^=topnews_main_stream]');
+    var message = $('#distracted');
 
-    if (feed.length > 0) {
+    if (feed.length == 0) {
+        message.remove();
+    } else if (message.length == 0) {
         feed.hide();
-
-        var message = $('<h1>');
+        message = $('<h1>');
         message.attr('id', 'distracted');
         message.html("Don't get distracted by FB!");
         message.css('font-size', '36px');
@@ -13,7 +14,7 @@ function blockAndDisplay() {
         message.css('position', 'relative');
         message.css('top', '100px');
         message.css('float', 'left');
-        $('#u_0_i').append(message);
+        $('[data-location=maincolumn]').append(message);
     }
 }
 
