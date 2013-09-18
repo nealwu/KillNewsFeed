@@ -21,7 +21,7 @@ function blockAndDisplay() {
         message.css('left', '20px');
         message.css('top', '250px');
         container.append(message);
-   }
+    }
 }
 
 if (document.URL.indexOf("facebook.com") !== -1) {
