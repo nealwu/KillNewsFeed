@@ -18,4 +18,4 @@ function blockAndDisplay() {
 }
 
 blockAndDisplay();
-setInterval(blockAndDisplay, 200);
+setInterval(blockAndDisplay, 250);
