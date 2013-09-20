@@ -17,5 +17,11 @@ function blockAndDisplay() {
     }
 }
 
-blockAndDisplay();
-setInterval(blockAndDisplay, 250);
+function repeatFunction(func, delay) {
+    func();
+    setTimeout(function() {
+        repeatFunction(func, delay);
+    }, delay);
+}
+
+repeatFunction(blockAndDisplay, 100);
