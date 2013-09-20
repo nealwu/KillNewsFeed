@@ -4,7 +4,7 @@
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
       "js": ["jquery.min.js", "turtle.js"],
-      "run_at": "document_end"
+      "run_at": "document_start"
   }],
   "browser_action": {
     "name": "Kill Facebook's News Feed",
