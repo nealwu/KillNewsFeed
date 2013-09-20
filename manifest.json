@@ -1,9 +1,9 @@
 {
-  "name": "Facebook Turtle",
+  "name": "Kill News Feed",
   "version": "1.0",
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
-      "js": ["jquery.min.js", "turtle.js"],
+      "js": ["jquery.min.js", "kill.js"],
       "run_at": "document_start"
   }],
   "browser_action": {
