@@ -12,7 +12,7 @@ function blockAndDisplay() {
             .css('font-size', '30px')
             .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
             .css('position', 'relative')
-            .css('top', '100px');
+            .css('top', '75px');
         $('[data-location=maincolumn]').append(message);
     }
 }
