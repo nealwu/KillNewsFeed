@@ -6,9 +6,10 @@
       "js": ["jquery.min.js", "kill.js"],
       "run_at": "document_start"
   }],
-  "browser_action": {
-    "name": "Kill Facebook's News Feed",
-    "icons": []
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "manifest_version": 2
 }
