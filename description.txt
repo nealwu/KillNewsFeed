@@ -1,0 +1,10 @@
+I had a problem with Facebook. It was too addicting. I wasted a ton of time on it, sometimes more than an hour a day. Even worse, I would go on Facebook to send a message, get distracted by the news feed and scroll down for half an hour or more, and then forget to send the message that brought me there in the first place.
+
+I tried logging out more frequently, but that didn't work because I needed to check my messages, and when I did I would run into the same problem again. Deactivating wasn't an option either because needed to keep in touch with my friends.
+
+I realized what really had to go was the News Feed. So I made this app. It gets rid of the News Feed and replaces it with a message reminding you not to get distracted. That's it. You can still check your messages and notifications, and you can still post statuses. You just won't get distracting posts about memes or LOLcats anymore.
+
+
+Version 1:
+
+Do you feel like you waste a lot of time on Facebook? Or do you frequently go on Facebook to try to send/check messages, only to be distracted by the news feed, waste half an hour scrolling down, and forget to send the message that brought you there in the first place?
