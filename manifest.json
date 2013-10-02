@@ -1,15 +1,16 @@
 {
   "name": "Kill News Feed",
-  "version": "1.0",
+  "version": "1.0.1",
+  "description": "Do you you waste a lot of time on Facebook, but you don't want to deactivate because it's still useful? This extension is for you.",
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
       "js": ["jquery.min.js", "kill.js"],
       "run_at": "document_start"
   }],
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icon-red.png",
+    "48": "icon-red.png",
+    "128": "icon-red.png"
   },
   "manifest_version": 2
 }
