@@ -1,7 +1,7 @@
 {
   "name": "Kill News Feed",
   "version": "1.0.1",
-  "description": "Do you you waste a lot of time on Facebook, but you don't want to deactivate because it's still useful? This extension is for you.",
+  "description": "Saves you time by getting rid of Facebook news feed.",
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
       "js": ["jquery.min.js", "kill.js"],
