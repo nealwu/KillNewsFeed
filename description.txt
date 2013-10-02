@@ -1,5 +1,3 @@
-I had a problem. Facebook was addicting, and I wasted a ton of time on it. Even worse, I would go on Facebook to send a message, get distracted by the news feed, scroll down for half an hour, and forget to send the message in the first place.
+Kills the news feed and replaces it with a message reminding you not to get distracted. That's it. You can still check your messages and notifications, post status updates, and do everything you could do before. You just won't get distracting posts about memes or FarmVille anymore.
 
-I tried logging out more frequently, but that didn't work because I would just log in again. Deactivating wasn't an option either because I needed to keep in touch with my friends.
-
-I realized what really had to go was the news feed. So I made this app. It kills the news feed and replaces it with a message reminding you not to get distracted. That's it. You can still check your messages and notifications, post status updates, and do everything you could do before. You just won't get distracting posts about memes or FarmVille anymore.
+No more wasting time on Facebook. No more getting distracted and forgetting to send a message. It's that simple.
