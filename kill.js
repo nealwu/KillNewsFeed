@@ -1,5 +1,5 @@
 function blockAndDisplay() {
-    var feed = $('[id^=topnews_main_stream], [id^=pagelet_home_stream]');
+    var feed = $('[id^=topnews_main_stream], [id^=mostrecent_main_stream], [id^=pagelet_home_stream]');
     var message = $('#distracted');
 
     if (feed.length == 0) {
@@ -15,6 +15,8 @@ function blockAndDisplay() {
             .css('top', '75px');
         $('[data-location=maincolumn]').append(message);
     }
+
+    $('.ticker_stream').hide();
 }
 
 function repeatFunction(func, delay) {
