@@ -5,7 +5,6 @@ function blockAndDisplay() {
     if (feed.length == 0) {
         message.remove();
     } else if (message.length == 0) {
-        feed.css('height', '5000px');
         feed.hide();
         message = $('<h1>')
             .attr('id', 'distracted')
@@ -18,6 +17,9 @@ function blockAndDisplay() {
     }
 
     $('.ticker_stream').hide();
+
+    if ($('body').length > 0 && $('body').height() < $(document).height())
+        $('body').height($(document).height());
 }
 
 function repeatFunction(func, delay) {
