@@ -5,6 +5,7 @@ function blockAndDisplay() {
     if (feed.length == 0) {
         message.remove();
     } else if (message.length == 0) {
+        feed.css('height', '5000px');
         feed.hide();
         message = $('<h1>')
             .attr('id', 'distracted')
