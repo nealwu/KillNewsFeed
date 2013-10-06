@@ -5,7 +5,6 @@ function blockAndDisplay() {
     if (feed.length == 0) {
         message.remove();
     } else if (message.length == 0) {
-        feed.hide();
         message = $('<h1>')
             .attr('id', 'distracted')
             .text("Don't get distracted by Facebook!")
@@ -14,12 +13,10 @@ function blockAndDisplay() {
             .css('position', 'relative')
             .css('top', '75px');
         $('[data-location=maincolumn]').append(message);
-    }
+     }
 
-    $('.ticker_stream').hide();
-
-    if ($('body').length > 0 && $('body').height() < $(document).height())
-        $('body').height($(document).height());
+    feed.children().remove();
+    $('.ticker_stream').remove();
 }
 
 function repeatFunction(func, delay) {
