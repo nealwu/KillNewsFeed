@@ -17,6 +17,7 @@ function blockAndDisplay() {
 
     feed.children().remove();
     $('.ticker_stream').remove();
+    $('.ego_column').remove();
 }
 
 function repeatFunction(func, delay) {
