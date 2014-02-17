@@ -20,11 +20,4 @@ function blockAndDisplay() {
     $('.ego_column').remove();
 }
 
-function repeatFunction(func, delay) {
-    func();
-    setTimeout(function() {
-        repeatFunction(func, delay);
-    }, delay);
-}
-
-repeatFunction(blockAndDisplay, 100);
+window.setInterval(blockAndDisplay, 100);
