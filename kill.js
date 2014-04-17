@@ -18,6 +18,8 @@ function blockAndDisplay() {
     feed.children().remove();
     $('.ticker_stream').remove();
     $('.ego_column').remove();
+    $('#pagelet_games_rhc').remove();
+    $('#pagelet_trending_tags_and_topics').remove();
 }
 
 window.setInterval(blockAndDisplay, 100);
