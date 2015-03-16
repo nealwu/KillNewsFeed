@@ -11,17 +11,16 @@
       "run_at": "document_start"
     }
   ],
-  "description": "Saves you time by getting rid of Facebook news feed.",
-  "icons": {
-    "128": "images/icon-red.png",
-    "16": "images/icon-red.png",
-    "48": "images/icon-red.png"
-  },
+  "description": "Increases productivity by replacing Facebook timeline with photo and inspirational quote",
+  "icons": { },
   "manifest_version": 2,
-  "name": "Kill News Feed",
+  "name": "BetterTimeline",
   "options_page": "options.html",
   "permissions": [
     "storage"
   ],
-  "version": "1.1.0"
+  "web_accessible_resources": [
+    "quotes.json"
+  ],
+  "version": "0.1.0"
 }

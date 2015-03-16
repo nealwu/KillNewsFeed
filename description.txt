@@ -1,3 +1,6 @@
-Kills the news feed and replaces it with a message reminding you not to get distracted. That's it. You can still check your messages and notifications, post status updates, and do everything you could do before. You just won't get distracting news feed posts anymore.
+Facebook is an awesome tool for networking, messaging and keeping track of events and photos. But it is also designed to be heavily addictive and when you sign on to Facebook your timeline shows you a bunch of stories designed to catch your interest.
 
-No more wasting time on Facebook. No more getting distracted when you log on to send a message. It's that simple.
+While this is nice, to those using Facebook more as a tool this can be extremely distracting. There have been many times I logged onto Facebook to check the time for an event or to message a friend but then been lost on someone's photos from spring break. Only after spending twenty minutes on the site do I realize that I have forgotten what I originally opened Facebook for.
+
+BetterTimeline hides your timeline by default and instead shows your a nice photo and inspirational quote. This allows you to go on Facebook, get what you need get to get done and leave without wasting time. It also allows you to display your timeline if you want to browse through it.
+
