@@ -20,6 +20,7 @@
     "storage"
   ],
   "web_accessible_resources": [
+    "images/*",
     "quotes.json"
   ],
   "version": "0.1.0"
