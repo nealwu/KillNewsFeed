@@ -1,10 +1,16 @@
 var intervalId
 var quotesUrl = chrome.extension.getURL('quotes.json')
+var picturesUrl = chrome.extension.getURL('pictures.json')
 var imageUrl = chrome.extension.getURL('images/vw-bus.jpeg')
 var quote = ""
 $.getJSON(quotesUrl, function(json) {
-  var quotes = json.quotes
-  quote = quotes[Math.floor(Math.random()*quotes.length)]
+  $.getJSON(picturesUrl, function(pictures) {
+    var quotes = json.quotes
+    // quote = quotes[Math.floor(Math.random()*quotes.length)]
+    date = new Date().getDate()
+    picture = pictures[date]
+    quote = quotes[date]
+  })
 })
 
 var feedString = '[id^=topnews_main_stream], [id^=mostrecent_main_stream], [id^=pagelet_home_stream]'
@@ -38,24 +44,25 @@ function hideTimelineAndDisplayQuote() {
       var timelineReplacementContainer = $('<div>')
         .attr('id', 'timeline-replacement-container')
         .css('text-align', 'center')
+        .css('border-top', 'solid rgb(231, 232, 235) 20px')
       if ($('#timeline-replacement-container').length == 0) $('[data-location=maincolumn]').append(timelineReplacementContainer)
+
+      var image = $('<img>')
+        .attr('id', 'better-image')
+        .attr('src', picture)
+        .attr('alt', 'A really nice picture!')
+        .css('padding-top', '20px')
+        .css('width', '90%')
+      if ($('#better-image').length == 0) $('#timeline-replacement-container').append(image)
 
       var newMessage = $('<h1>')
         .attr('id', 'distracted')
         .text(messageText)
         .css('font-size', '25px')
-        .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
         .css('padding', '20px')
+        .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
         .css('text-align', 'left')
-        .css('border-top', 'solid rgb(231, 232, 235) 20px')
-      if ($('#distracted').length == 0) $('#timeline-replacement-container').append(newMessage)
-
-      var image = $('<img>')
-        .attr('id', 'better-image')
-        .attr('src', imageUrl)
-        .attr('alt', 'A really nice picture!')
-        .css('width', '90%')
-      if ($('#better-image').length == 0) $('#timeline-replacement-container').append('<br>').append(image)
+      if ($('#distracted').length == 0) $('#timeline-replacement-container').append('<br>').append(newMessage)
 
       // var optionsLink = $('<a>')
       //   .attr('id', 'options-link')

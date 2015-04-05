@@ -3,7 +3,7 @@
     {
       "js": [
         "jquery.min.js",
-        "kill.js"
+        "betterify.js"
       ],
       "matches": [
         "*://*.facebook.com/*"
@@ -11,17 +11,22 @@
       "run_at": "document_start"
     }
   ],
-  "description": "Increases productivity by replacing Facebook timeline with photo and inspirational quote",
-  "icons": { },
+  "description": "Increases productivity by replacing Facebook News Feed with photo and inspirational quote",
+  "icons": {
+    "16": "images/bnf-logo16.png",
+    "48": "images/bnf-logo48.png",
+    "128": "images/bnf-logo128.png"
+  },
   "manifest_version": 2,
-  "name": "BetterTimeline",
+  "name": "Better News Feed",
   "options_page": "options.html",
   "permissions": [
     "storage"
   ],
   "web_accessible_resources": [
     "images/*",
+    "pictures.json",
     "quotes.json"
   ],
-  "version": "0.1.0"
+  "version": "1.2.1"
 }
