@@ -1,7 +1,6 @@
 var intervalId
 var quotesUrl = chrome.extension.getURL('quotes.json')
 var picturesUrl = chrome.extension.getURL('pictures.json')
-var imageUrl = chrome.extension.getURL('images/vw-bus.jpeg')
 var quote = ""
 $.getJSON(quotesUrl, function(json) {
   $.getJSON(picturesUrl, function(pictures) {
