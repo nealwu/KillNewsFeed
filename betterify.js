@@ -44,7 +44,8 @@ function hideTimelineAndDisplayQuote() {
         .attr('id', 'timeline-replacement-container')
         .css('text-align', 'center')
         .css('border-top', 'solid rgb(231, 232, 235) 20px')
-      if ($('#timeline-replacement-container').length == 0) $('[data-location=maincolumn]').append(timelineReplacementContainer)
+        .css('background', 'white')
+      if ($('#timeline-replacement-container').length == 0) $('#pagelet_composer').after(timelineReplacementContainer)
 
       var image = $('<img>')
         .attr('id', 'better-image')
@@ -83,7 +84,7 @@ function hideTimelineAndDisplayQuote() {
       // }
     }
 
-    feed.children().hide()
+    feed.children().css('opacity', 0)
     for (var i in elementsToRemove) {
       $(elementsToRemove[i]).hide()
     }
@@ -101,7 +102,7 @@ function displayTimeline() {
 }
 
 function hideTimeline() {
-  intervalId = window.setInterval(hideTimelineAndDisplayQuote, 100)
+  intervalId = window.setInterval(hideTimelineAndDisplayQuote, 100);
 }
 
 hideTimeline()
