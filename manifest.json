@@ -12,5 +12,6 @@
     "48": "images/icon-red.png",
     "128": "images/icon-red.png"
   },
+  "permissions": ["activeTab"],
   "manifest_version": 2
 }
