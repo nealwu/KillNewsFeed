@@ -21,6 +21,7 @@ function blockAndDisplay() {
     $('#pagelet_games_rhc').remove();
     $('#pagelet_trending_tags_and_topics').remove();
     $('#pagelet_canvas_nav_content').remove();
+    $('#stories_pagelet_below_composer').remove();
 }
 
 window.setInterval(blockAndDisplay, 100);
