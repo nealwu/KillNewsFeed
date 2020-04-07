@@ -8,7 +8,10 @@ function blockAndDisplay() {
     $('#pagelet_canvas_nav_content').remove();
     $('#stories_pagelet_below_composer').remove();
 
-    $('[role=feed]').remove();
+    if (window.location.href.endsWith('facebook.com') || window.location.href.endsWith('facebook.com/')) {
+        $('[role=feed]').remove();
+    }
+
     $('[aria-label=Stories]').remove();
     $('[data-pagelet=Stories]').remove();
 }

@@ -1,6 +1,6 @@
 {
   "name": "Kill News Feed",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Saves you time by getting rid of Facebook news feed.",
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
