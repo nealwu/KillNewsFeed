@@ -1,6 +1,6 @@
 {
   "name": "Kill News Feed",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Saves you time by getting rid of Facebook news feed.",
   "content_scripts": [{
       "matches": ["*://*.facebook.com/*"],
@@ -8,9 +8,11 @@
       "run_at": "document_start"
   }],
   "icons": {
-    "16": "images/icon-red.png",
-    "48": "images/icon-red.png",
-    "128": "images/icon-red.png"
+    "16": "images/icon-red-16.png",
+    "32": "images/icon-red-32.png",
+    "48": "images/icon-red-48.png",
+    "128": "images/icon-red-128.png",
+    "256": "images/icon-red.png"
   },
   "permissions": [],
   "manifest_version": 3
