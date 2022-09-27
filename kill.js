@@ -8,12 +8,16 @@ function blockAndDisplay() {
     $('#pagelet_canvas_nav_content').remove();
     $('#stories_pagelet_below_composer').remove();
 
+    // Handles the Apr 2022 Facebook redesign
     if (window.location.href.endsWith('facebook.com') || window.location.href.endsWith('facebook.com/')) {
         $('[role=feed]').remove();
     }
 
     $('[aria-label=Stories]').remove();
     $('[data-pagelet=Stories]').remove();
+
+    // Handles the Sep 2022 Facebook redesign
+    $('#ssrb_feed_start').parent().remove();
 }
 
 window.setInterval(blockAndDisplay, 100);
